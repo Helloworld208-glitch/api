@@ -107,7 +107,7 @@ class Adduser(Fatherclass):
      result = self.session.query(Userr.email).filter_by(id=payload['user_id']).first()
      if result:
         
-        return  return {"email": result[0]}
+        return {"email": result[0]}
      else:
         raise auth_exeption 
       
